@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:background="#FFFFFF">
+    
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="54dp"
+    	android:background="@drawable/main_bar"
+    	android:id="@+id/header">
+   	
+    	<RelativeLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:layout_alignParentLeft="true">
+    	
+	    	<Button
+	        	android:id="@+id/single_reference_list_layout_back_button"
+	        	android:layout_width="56dp"
+	        	android:layout_height="30dp"
+	        	android:layout_centerVertical="true"
+	        	android:background="@drawable/back_button_selector"
+	        	android:layout_marginLeft="5dp">
+	        </Button>
+	    	
+	    	<TextView
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="20dp"
+	    		android:layout_toRightOf="@+id/single_reference_list_layout_back_button"
+	    		android:layout_centerVertical="true"
+	    		android:layout_marginLeft="15dp">
+	    	</TextView>
+	    	
+	    </RelativeLayout>
+    	
+    	<Button
+        	android:id="@+id/single_reference_list_layout_new_button"
+        	android:layout_width="56dp"
+        	android:layout_height="30dp"
+        	android:layout_marginRight="10dp"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:background="@drawable/edit_button_selector"
+        	android:clickable="true">
+        </Button>
+        
+	</RelativeLayout>
+    
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="54dp"
+    	android:background="@drawable/background_main"
+    	android:orientation="horizontal">
+    	
+    	<RelativeLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center_vertical"
+    		android:layout_marginRight="0dp"
+    		android:layout_weight="1">
+    	
+    		<Button
+	    		android:layout_centerVertical="true"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="fill_parent"
+	    		android:layout_alignParentRight="true"
+	    		android:id="@+id/single_reference_list_layout_citation_button"
+	    		android:layout_marginRight="0dp"
+	    		android:background="@drawable/citation_button_selector">
+	    	</Button>
+    	
+    	</RelativeLayout>
+    	
+    	<RelativeLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center_vertical"
+    		android:layout_marginLeft="0dp"
+    		android:layout_weight="1">
+    	
+    		<Button
+	    		android:layout_centerVertical="true"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="fill_parent"
+	    		android:layout_alignParentLeft="true"
+	    		android:layout_marginLeft="0dp"
+	    		android:id="@+id/single_reference_list_layout_bibliography_button"
+	    		android:background="@drawable/bibliography_button_selector">
+	    	</Button>
+    	
+    	</RelativeLayout>
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight="1">
+    
+	    <ListView
+	        android:id="@+id/single_reference_list_layout_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:listSelector="@drawable/list_selctor"
+	        android:dividerHeight="1dp"
+	        android:divider="@drawable/list_seperator">
+	   	</ListView>
+	   	
+	   	<ViewStub
+			android:id="@+id/single_reference_list_layout_empty_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout="@layout/empty">	
+		</ViewStub>
+   	
+   	</LinearLayout>
+   	
+   	 <LinearLayout
+       	android:id="@+id/footer"
+	  	android:orientation="horizontal"
+	  	android:layout_width="fill_parent"
+		android:layout_height="54dp"
+		android:background="@drawable/footer"
+        android:layout_alignParentBottom="true">
+ 
+		<HorizontalScrollView
+			android:layout_width="wrap_content"
+		  	android:layout_height="fill_parent"
+		  	android:layout_gravity="center_vertical"
+		  	android:layout_weight="1">
+		  	
+			<LinearLayout
+			  	android:orientation="horizontal"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="fill_parent"
+			  	android:layout_gravity="center_vertical">
+				
+				<Button
+				  	android:textColor="#FFFFFF"
+				  	android:id="@+id/single_reference_list_layout_harvard_style_button"
+				  	android:background="@drawable/harvard_button_selector"
+				  	android:layout_width="80dp"
+				  	android:textStyle="bold"
+	    			android:textSize="14dp"
+				  	android:layout_height="fill_parent">
+				</Button>
+				
+				<Button
+					android:id="@+id/single_reference_list_layout_vancouver_style_button"
+				  	android:textColor="#FFFFFF"
+				  	android:background="@drawable/vancouve_button_selector"
+				  	android:layout_width="80dp"
+				  	android:textStyle="bold"
+	    			android:textSize="14dp"
+				  	android:layout_height="fill_parent">
+				</Button>
+				  	
+				<Button
+				  	android:id="@+id/single_reference_list_layout_oxford_style_button"
+				  	android:textColor="#FFFFFF"
+				  	android:background="@drawable/oxford_button_selctor"
+				  	android:layout_width="80dp"
+				  	android:textStyle="bold"
+	    			android:textSize="14dp"
+				  	android:layout_height="fill_parent">
+			  	</Button>
+			  	
+				<Button
+					android:id="@+id/single_reference_list_layout_chicago_style_button"
+				  	android:textColor="#FFFFFF"
+				  	android:background="@drawable/chicago_button_selector"
+				  	android:layout_width="80dp"
+				  	android:textStyle="bold"
+	    			android:textSize="14dp"
+				  	android:layout_height="fill_parent">
+			  	</Button>
+			  	
+				<Button
+					android:id="@+id/single_reference_list_layout_mla_style_button"
+				  	android:textColor="#FFFFFF"
+				  	android:background="@drawable/mla_button_selector"
+				  	android:layout_width="80dp"
+				  	android:textStyle="bold"
+	    			android:textSize="14dp"
+				  	android:layout_height="fill_parent">
+			  	</Button>
+			  	
+				<Button
+					android:id="@+id/single_reference_list_layout_mrha_style_button"
+				  	android:textColor="#FFFFFF"
+				  	android:background="@drawable/mrha_button_selector"
+				  	android:layout_width="80dp"
+				  	android:textStyle="bold"
+	    			android:textSize="14dp"
+					android:layout_marginRight="3dp"
+				  	android:layout_height="fill_parent">
+			  	</Button>
+				
+			</LinearLayout>
+			
+		</HorizontalScrollView>
+
+		<Button
+			android:layout_width="60dp"
+		 	android:layout_height="fill_parent"
+		 	android:background="@drawable/share_button_selector"
+		 	android:layout_gravity="center_vertical">
+		</Button>
+
+		
+	</LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF">
+	
+	<RelativeLayout
+		android:id="@+id/new_reference_layout_referenceme_bar"
+    	android:layout_width="fill_parent"
+    	android:layout_height="54dp"
+    	android:clickable="true"
+    	android:background="@drawable/referenceme_header_bar_button">
+    	
+    	<Button
+        	android:id="@+id/new_reference_layout_back_button"
+        	android:layout_width="56dp"
+        	android:layout_height="30dp"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dp"
+        	android:clickable="true"
+        	android:background="@drawable/back_button_selector">
+        </Button>
+    	
+    	<Button				
+        	android:id="@+id/new_reference_layout_info_button"
+        	android:layout_width="32dp"
+        	android:layout_height="32dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:clickable="true"
+        	android:background="@drawable/info_button_selector">
+        </Button>
+    	
+  	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="center">
+
+		<ScrollView
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+	
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+	
+				<LinearLayout
+				  	android:orientation="vertical"
+				  	android:layout_width="fill_parent"
+				  	android:layout_height="fill_parent"
+				  	android:layout_weight="1"				  	
+				  	android:padding="5dp">
+				    
+				    <TextView 
+				    	android:text="Type"
+				    	android:id="@+id/nic_lable" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+				    	android:textSize="17dp" 
+				    	android:layout_marginTop="10dp" 
+				    	android:layout_marginLeft="31dp"
+				    	android:textColor="#000000">
+				    
+				    </TextView>
+					
+					<RadioGroup
+						android:id="@+id/new_reference_layout_reference_type_radiogroup" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:orientation="horizontal"
+						android:layout_marginLeft="27dp">
+						
+						<RadioButton
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"
+							android:id="@+id/new_reference_layout_reference_type_book" 
+							android:text=" Book"
+							android:textColor="#000000"
+							android:checked="true"
+							android:textSize="17dp">
+						</RadioButton>
+						
+						<RadioButton
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:id="@+id/new_reference_layout_reference_type_journal"
+							android:text=" Journal"
+							android:textColor="#000000"
+							android:layout_marginLeft="5dp"
+							android:textSize="17dp">
+						</RadioButton>
+					
+					</RadioGroup>
+				    
+				    <TextView 
+				    	android:text="Authors Name"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp" 
+				    	android:layout_marginLeft="31dp"
+				    	android:layout_marginTop="5dp"
+				    	android:textColor="#000000">
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_author_name_text"
+						android:layout_width="fill_parent"
+						android:inputType="text"
+						android:layout_marginLeft="30dp"
+						android:layout_marginRight="30dp"
+						android:textSize="20dp">
+					</EditText>
+					
+					<TextView 
+				    	android:text="Book Title"
+				    	android:id="@+id/new_reference_layout_title_text_view"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp" 
+				    	android:layout_marginTop="5dp" 
+				    	android:layout_marginLeft="31dp"
+				    	android:textColor="#000000">
+				    
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_book_title_text" 
+						android:layout_width="fill_parent"  
+						android:inputType="text"
+						android:layout_marginLeft="30dp" 
+						android:layout_marginRight="30dp" 
+						android:textSize="20dp">   
+					</EditText>
+					
+					<TextView 
+				    	android:text="Journal Title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp"
+				    	android:layout_marginTop="5dp"
+				    	android:layout_marginLeft="31dp"
+				    	android:textColor="#000000">
+				    
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_journal_title_edit_text" 
+						android:layout_width="fill_parent"  
+						android:inputType="text"
+						android:layout_marginLeft="30dp" 
+						android:layout_marginRight="30dp" 
+						android:textSize="20dp">   
+					</EditText>
+					
+					<TextView 
+				    	android:text="Year of publication"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+				    	android:textSize="17dp" 
+				    	android:layout_marginTop="5dp" 
+				    	android:layout_marginLeft="31dp"
+				    	android:textColor="#000000">
+				    
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_year_of_publication_text"
+						android:layout_width="fill_parent"  
+						android:inputType="number" 
+						android:layout_marginLeft="30dp" 
+						android:layout_marginRight="30dp" 
+						android:textSize="20dp">   
+					</EditText>
+					
+					<TextView 
+				    	android:text="Place of publication"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp" 
+				    	android:layout_marginTop="5dp" 
+				    	android:layout_marginLeft="31dp"
+				    	android:textColor="#000000">
+				    
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_place_of_publication_text"
+						android:layout_width="fill_parent"  
+						android:layout_marginLeft="30dp" 
+						android:layout_marginRight="30dp"
+						android:inputType="text"  
+						android:textSize="20dp">   
+					</EditText>
+					
+					<TextView
+				    	android:text="Publisher"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp" 
+				    	android:layout_marginTop="5dp" 
+				    	android:layout_marginLeft="31dp"
+				    	android:textColor="#000000">
+				    
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_publisher_text"
+						android:layout_width="fill_parent"  
+						android:inputType="text" 
+						android:layout_marginLeft="30dp" 
+						android:layout_marginRight="30dp" 
+						android:textSize="20dp">   
+					</EditText>
+					
+					<TextView 
+				    	android:text="Edition"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp" 
+				    	android:layout_marginLeft="31dp" 
+				    	android:layout_marginTop="5dp"
+				    	android:textColor="#000000">
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_book_edition_text"
+						android:layout_width="fill_parent"  
+						android:inputType="number" 
+						android:layout_marginLeft="30dp"
+						android:layout_marginRight="30dp"
+						android:textSize="20dp">
+					</EditText>
+					
+					<TextView 
+				    	android:text="Page No"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp" 
+				    	android:layout_marginLeft="31dp" 
+				    	android:layout_marginTop="5dp"
+				    	android:textColor="#000000">
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_page_no_text"
+						android:layout_width="fill_parent"
+						android:inputType="text"
+						android:layout_marginLeft="30dp"
+						android:layout_marginRight="30dp"
+						android:textSize="20dp">
+					</EditText>
+					
+					<TextView 
+				    	android:text="Contributor"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp" 
+				    	android:layout_marginLeft="31dp" 
+				    	android:layout_marginTop="5dp"
+				    	android:textColor="#000000">
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_contributor_text"
+						android:layout_width="fill_parent"  
+						android:inputType="text" 
+						android:layout_marginLeft="30dp"
+						android:layout_marginRight="30dp"
+						android:textSize="20dp">
+					</EditText>
+					
+					<TextView 
+				    	android:text="Journal No"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp" 
+				    	android:layout_marginLeft="31dp" 
+				    	android:layout_marginTop="5dp"
+				    	android:textColor="#000000">
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_journal_no_text"
+						android:layout_width="fill_parent"  
+						android:inputType="number" 
+						android:layout_marginLeft="30dp"
+						android:layout_marginRight="30dp"
+						android:textSize="20dp">
+					</EditText>
+					
+					<TextView
+				    	android:text="Volume No"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp" 
+				    	android:layout_marginLeft="31dp" 
+				    	android:layout_marginTop="5dp"
+				    	android:textColor="#000000">
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_volume_no_text"
+						android:layout_width="fill_parent"  
+						android:inputType="number" 
+						android:layout_marginLeft="30dp"
+						android:layout_marginRight="30dp"
+						android:textSize="20dp">
+					</EditText>
+					
+					<TextView
+				    	android:text="Issue No" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+				    	android:textSize="17dp"
+				    	android:layout_marginLeft="31dp" 
+				    	android:layout_marginTop="5dp"
+				    	android:textColor="#000000">
+				    </TextView>
+				    
+				    <EditText
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_issue_no_text"
+						android:layout_width="fill_parent"  
+						android:layout_marginLeft="30dp"
+						android:layout_marginRight="30dp" 
+						android:inputType="number"
+						android:textSize="20dp">
+					</EditText>
+				    
+				</LinearLayout>
+			
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="10dp">
+			
+					<Button
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_done_button"
+						android:layout_weight="1"
+						android:layout_marginLeft="37dp"
+						android:layout_marginRight="3dp"
+						android:background="@drawable/button_selctor"
+						android:text="Done"/>
+			
+					<Button
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:id="@+id/new_reference_layout_cancel_button"
+						android:layout_weight="1"
+						android:layout_marginRight="37dp"
+						android:layout_marginLeft="3dp"
+						android:background="@drawable/button_selctor"
+						android:text="Cancel"/>
+			
+				</LinearLayout>
+		
+			</LinearLayout>
+		
+		</ScrollView>
+	
+	</LinearLayout>
+	
+</LinearLayout>

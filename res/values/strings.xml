@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ReferenceMeActivity!</string>
+    <string name="app_name">ReferenceMe</string>
+    
+    <string name="default_style_prompt">Choose a style</string>
+    
+    <string-array name="default_style_array">
+        <item>harvard</item>
+        <item>vancouver</item>
+        <item>oxford</item>
+        <item>chicago</item>
+        <item>mla</item>
+        <item>mrha</item>
+    </string-array>
+    
+</resources>

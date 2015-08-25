@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+	android:background="@drawable/message_ratena">
+    
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight="1">
+    
+    	<Button
+    		android:layout_width="120dp"
+    		android:layout_height="38dp"
+    		android:layout_alignParentTop="true"
+    		android:layout_centerHorizontal="true"
+    		android:layout_marginTop="130dp"
+    		android:layout_marginBottom="20dp"
+    		android:id="@+id/message_layout_fb_signin_button"
+    		android:background="@drawable/fb_signin_button_selector">
+    	
+    	</Button>
+    	
+    	<Button
+    		android:layout_width="120dp"
+    		android:layout_height="38dp"
+    		android:id="@+id/message_layout_skip_button"
+    		android:layout_below="@+id/message_layout_fb_signin_button"
+    		android:layout_centerHorizontal="true"
+    		android:background="@drawable/skip_button_selector">
+    	</Button>
+    
+   	</RelativeLayout>
+  	
+</LinearLayout>

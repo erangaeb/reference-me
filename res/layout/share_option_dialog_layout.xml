@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/dialog_shape"
+	android:layout_gravity="center">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<RelativeLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="50dp"
+	    	android:background="@drawable/dialog_header_shape">
+	    	
+	    	<Button
+	        	android:id="@+id/share_option_dialog_layout_back_button"
+	        	android:layout_width="56dp"
+	        	android:layout_height="30dp"
+	        	android:layout_marginLeft="10dp"
+	        	android:layout_centerVertical="true"
+	        	android:clickable="true"
+	        	android:background="@drawable/close_button_selector">
+	        </Button>
+	    	
+	    	<TextView
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="Share with"
+	    		android:textSize="20dp"
+	    		android:layout_centerVertical="true"
+	    		android:layout_centerHorizontal="true">
+	    	</TextView>
+	    	
+	  	</RelativeLayout>
+		
+		<LinearLayout
+		  	android:orientation="vertical"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="fill_parent"
+		  	android:layout_marginTop="10dp"
+		  	android:layout_marginBottom="10dp"
+		  	android:padding="5dp">
+			
+		    <Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="27dp"
+				android:layout_marginRight="27dp"
+				android:id="@+id/share_option_dialog_layout_facebook_button"
+				android:background="@drawable/button_selctor"
+				android:text="Facebook">
+			</Button>
+			
+		    <Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginTop="25dp"
+				android:layout_marginLeft="27dp"
+				android:layout_marginRight="27dp"
+				android:layout_marginBottom="20dp"
+				android:id="@+id/share_option_dialog_layout_email_button"
+				android:background="@drawable/button_selctor"
+				android:text="E-mail">
+			</Button>
+		    
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</ScrollView>

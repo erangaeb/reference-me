@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF">
+
+	<RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="54dp"
+    	android:background="@drawable/referenceme_header_bar_button">
+    	
+    	<RelativeLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:layout_alignParentLeft="true">		
+    					
+	    	<Button				
+	        	android:id="@+id/share_facebook_layout_back_button"
+	        	android:layout_width="56dp"				
+	        	android:layout_height="30dp"			
+	        	android:layout_centerVertical="true"
+	        	android:clickable="true"				
+	        	android:background="@drawable/back_button_selector"
+	        	android:layout_marginLeft="5dp">
+	        </Button>
+	    	
+	    	<TextView
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="20dp"
+	    		android:layout_toRightOf="@+id/my_projects_list_layout_back_button"
+	    		android:layout_centerVertical="true"
+	    		android:layout_marginLeft="15dp">
+	    	</TextView> 
+	    	
+	    </RelativeLayout>
+	    	
+    	<Button
+        	android:id="@+id/share_facebook_layout_login_button"
+        	android:layout_width="56dp"
+        	android:layout_height="32dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:clickable="true"
+        	android:background="@drawable/facebook_login_button_selector">
+        </Button>
+	        
+  	</RelativeLayout>
+
+	<RelativeLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:orientation="vertical">
+
+			<LinearLayout
+			  	android:orientation="vertical"
+			  	android:layout_width="fill_parent"
+			  	android:layout_height="wrap_content"
+			  	android:layout_weight="1"	
+			  	android:id="@+id/new_isbn_issn_layout_text_pannel" 		  	
+			  	android:padding="5dp">
+			    
+			    <TextView 
+			    	android:text="Reference text"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+			    	android:textSize="17dp" 
+			    	android:layout_marginLeft="31dp"
+			    	android:layout_marginTop="5dp"
+			    	android:textColor="#000000">
+			    </TextView>
+			    
+			    <EditText  
+    				android:id="@+id/share_facebook_layout_reference_text"  
+				    android:layout_height="wrap_content"  
+				    android:inputType="textMultiLine"  
+				    android:lines="10"  
+				    android:layout_marginLeft="30dp"
+					android:layout_marginRight="30dp"
+					android:gravity="top"
+					android:textSize="20dp"
+				    android:layout_width="fill_parent">  
+				</EditText>  
+			    
+			</LinearLayout>
+		
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:layout_below="@+id/new_isbn_issn_layout_text_pannel"
+				android:layout_marginBottom="10dp">
+		
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:id="@+id/share_facebook_layout_share_button"
+					android:layout_weight="1"
+					android:layout_marginLeft="37dp"
+					android:layout_marginRight="3dp"
+					android:background="@drawable/button_selctor"
+					android:text="Share"/>
+		
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:id="@+id/share_facebook_layout_cancel_button"
+					android:layout_weight="1"
+					android:layout_marginRight="37dp"
+					android:layout_marginLeft="3dp"
+					android:background="@drawable/button_selctor"
+					android:text="Cancel"/>
+		
+			</LinearLayout>
+	
+		</RelativeLayout>
+	
+	</RelativeLayout>
+	
+</LinearLayout>

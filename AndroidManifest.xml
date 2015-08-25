@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+   	package="appwolf.referenceme.activities"
+   	android:versionCode="1"
+    android:versionName="1.0">
+    
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application 
+    	android:icon="@drawable/app_icon" 
+    	android:label="@string/app_name"
+    	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    	android:name="appwolf.referenceme.application.ReferenceMeApplication">
+        
+        <activity 
+        	android:name="com.google.zxing.client.android.CaptureActivity"
+     		android:screenOrientation="landscape"	
+			android:configChanges="orientation|keyboardHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="stateAlwaysHidden">
+			
+		   <intent-filter>
+		      <action android:name="android.intent.action.MAIN"/>
+		      <category android:name="android.intent.category.DEFAULT"/>
+		   </intent-filter>
+		   
+		   <intent-filter>
+		      <action android:name="com.google.zxing.client.android.SCAN"/>
+		      <category android:name="android.intent.category.DEFAULT"/>
+		    </intent-filter>
+		    
+		</activity>
+        
+        <activity
+        	android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+
+		<activity 
+			android:name=".MessageActivity"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".ReferenceMeActivity"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".MyProjectsListActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".NewProjectActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".NewReferenceActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".ReferenceListActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".SingleReferenceListActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".NewISSNISBNActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".EditReferenceActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".ShareOnFacebook" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".FacebookShareActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".TipFirstActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity 
+			android:name=".TipSecondActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity 
+			android:name=".TipThirdActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity 
+			android:name=".TipFourthActivity" 
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity
+			android:name=".TipFifthActivity"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".TipSixthActivity"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".TipEditReferenceActivity"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".TipMyProjectListActivity"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity 
+			android:name=".TipReferenceListFirstActivity"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity 
+			android:name=".TipReferenceListSecondActivity"
+			android:windowSoftInputMode="stateHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+		</activity>
+		
+    </application>
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+</manifest>
